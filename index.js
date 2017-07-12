@@ -38,7 +38,7 @@ app.engine('html', template.__express);
 app.use(require('./routes/index'));
 // app.use(require('./routes/user/signin'));
 // app.use(require('./routes/user/signup'));
-app.use(require('./routes/user/logout'));
+// app.use(require('./routes/user/logout'));
 app.use(require('./routes/musicHall/homepage'));
 app.use(require('./routes/musicHall/singer'));
 app.use(require('./routes/musicHall/album'));
