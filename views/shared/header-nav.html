@@ -1,28 +1,27 @@
 <div class="mod_header">
     <div class="section_inner container">
         <div class="qqmusic_title">
-            <a href=""><img src="./images/logo.png" alt=""></a>
+            <a href=""><img src="/images/logo.png" alt=""></a>
         </div>
         <div class="mod-top-nav">
             <ul>
-                <li class="top_nav_link_clicked"><a href="">音乐馆</a></li>
-                <li class="top_nav_link"><a href="">我的音乐</a></li>
-                <li class="top_nav_link"><a href="">下载客户端</a></li>
-                <li class="top_nav_link"><a href="">VIP</a></li>
+                <li class="top_nav_link_clicked"><a href="javascript:;">音乐馆</a></li>
+                <li class="top_nav_link"><a href="javascript:;">我的音乐</a></li>
+                <li class="top_nav_link"><a href="javascript:;">下载客户端</a></li>
+                <li class="top_nav_link"><a href="javascript:;">VIP</a></li>
             </ul>
-            <!--<input type="text">-->
         </div>
         <div class="mod-top-search">
             <input style="height: 36px;width: 200px;border-radius: 2px" type="text">
-            <a id="search" href=""></a>
+            <a id="search" href="/searchlist.html"></a>
         </div>
         <div class="header_top">
             {{if user}}
-            <a href="" class="top_login_link_img"></a>
-            {{else}}
-            <a href="" class="top_login_link signInViewBtn">登录</a> {{/if}}
-            <a href="" class="top_login_link_vip">开通绿钻豪华版</a>
-            <a href="" class="top_login_link_open">开通付费包</a>
+            <a href="javascript:;" class="top_login_link_img"></a>
+            {{include '../user/myShow'}} {{else}}
+            <a href="javascript:;" class="top_login_link signInViewBtn">登录</a> {{/if}}
+            <a href="javascript:;" class="top_login_link_vip">开通绿钻豪华版</a>
+            <a href="javascript:;" class="top_login_link_open">开通付费包</a>
         </div>
     </div>
 </div>

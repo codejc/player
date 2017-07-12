@@ -1,0 +1,239 @@
+{{include '../shared/header'}}
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheet/header_style.css">
+<link rel="stylesheet" href="/stylesheet/hover.css">
+<link rel="stylesheet" href="/stylesheet/footer_style.css">
+<link rel="stylesheet" href="/stylesheet/userView/signUpView.css">
+<link rel="stylesheet" href="/stylesheet/userView/signInView.css">
+<link rel="stylesheet" href="/stylesheet/userView/myShow.css">
+<link rel="stylesheet" href="/stylesheet/singer_style.css">
+</head>
+
+<body>
+    {{include '../shared/header-nav'}}
+    <div class="mod-top-subnav">
+        <ul>
+            <li class="top_subnav_link"><a href="/">首页</a></li>
+            <li class="top_subnav_link top_subnav_link_clicked"><a href="#">歌手</a></li>
+            <li class="top_subnav_link"><a href="album">专辑</a></li>
+            <li class="top_subnav_link"><a href="">排行榜</a></li>
+            <li class="top_subnav_link"><a href="">分类歌单</a></li>
+            <li class="top_subnav_link"><a href="">MV</a></li>
+        </ul>
+    </div>
+    <!--登录界面-->
+    {{include '../user/signInView'}}
+    <!--注册界面-->
+    {{include '../user/signUpView'}}
+    <div class="mod_singer_push">
+        <div class="section_inner container">
+            {{if user}} {{else}}
+            <div class="singer_push_tit">
+                万千歌手 尽在眼前
+            </div>
+            <div class="singer_push_desc">
+                登录查看你的关注歌手
+            </div>
+            <div class="singer_push_btn signInViewBtn">
+                立即登录
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <div id="main container">
+        <div class="mod_singer_tag">
+            <div class="container">
+                <a href="" class="singer_tag_item--all">全部</a>
+                <a href="" class="singer_tag_item">华语男</a>
+                <a href="" class="singer_tag_item">华语女</a>
+                <a href="" class="singer_tag_item">华语组合</a>
+                <a href="" class="singer_tag_item">韩国男</a>
+                <a href="" class="singer_tag_item">韩国女</a>
+                <a href="" class="singer_tag_item">韩国组合</a>
+                <a href="" class="singer_tag_item">日本男</a>
+                <a href="" class="singer_tag_item">日本女</a>
+                <a href="" class="singer_tag_item">日本组合</a>
+                <a href="" class="singer_tag_item">欧美男</a>
+                <a href="" class="singer_tag_item">欧美女</a>
+                <a href="" class="singer_tag_item">欧美组合</a>
+                <a href="" class="singer_tag_item">乐团</a>
+                <a href="" class="singer_tag_item">演奏家</a>
+                <a href="" class="singer_tag_item">作曲家</a>
+                <a href="" class="singer_tag_item">指挥家</a>
+                <a href="" class="singer_tag_item">其他</a>
+            </div>
+            <div class="container">
+                <a href="" class="singer_tag_item--all">全部</a>
+                <a href="" class="singer_tag_item">A</a>
+                <a href="" class="singer_tag_item">B</a>
+                <a href="" class="singer_tag_item">C</a>
+                <a href="" class="singer_tag_item">D</a>
+                <a href="" class="singer_tag_item">E</a>
+                <a href="" class="singer_tag_item">F</a>
+                <a href="" class="singer_tag_item">G</a>
+                <a href="" class="singer_tag_item">H</a>
+                <a href="" class="singer_tag_item">I</a>
+                <a href="" class="singer_tag_item">J</a>
+                <a href="" class="singer_tag_item">K</a>
+                <a href="" class="singer_tag_item">L</a>
+                <a href="" class="singer_tag_item">M</a>
+                <a href="" class="singer_tag_item">N</a>
+                <a href="" class="singer_tag_item">O</a>
+                <a href="" class="singer_tag_item">P</a>
+                <a href="" class="singer_tag_item">Q</a>
+                <a href="" class="singer_tag_item">R</a>
+                <a href="" class="singer_tag_item">S</a>
+                <a href="" class="singer_tag_item">T</a>
+                <a href="" class="singer_tag_item">U</a>
+                <a href="" class="singer_tag_item">V</a>
+                <a href="" class="singer_tag_item">W</a>
+                <a href="" class="singer_tag_item">X</a>
+                <a href="" class="singer_tag_item">Y</a>
+                <a href="" class="singer_tag_item">Z</a>
+                <a href="" class="singer_tag_item">#</a>
+            </div>
+        </div>
+        <div class="singer_list_list container">
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">薛之谦</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">周杰伦</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">BIGBANG (빅뱅)</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">陈奕迅</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">林俊杰</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">Alan Walker (艾伦·沃..</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">李荣浩</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">TFBOYS</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">Maroon 5 (魔力红乐..</a></div>
+            </li>
+            <li class="singer_list_item">
+                <div class="singer_list_item_box"><a href="" class="singer_list_cover">许嵩</a></div>
+            </li>
+        </div>
+        <ul class="singer_list_txt container">
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">G.E.M. 邓紫棋</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张杰</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">鹿晗</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">庄心妍</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">杨宗纬</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Justin Bieber (贾斯汀·比伯)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张碧晨</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">华晨宇</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张学友</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">田馥甄</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">RADWIMPS (ラッドウィンプス)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">萧敬腾</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">那英</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">王力宏</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张靓颖</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">吴亦凡</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">BEYOND</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">林宥嘉</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">南征北战</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">汪苏泷</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">G-DRAGON (权志龙)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">苏打绿</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">朴树</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">王菲</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">筷子兄弟</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">MC天佑</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">MC魏小然</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">金志文</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">孙子涵</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">A-Lin</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">许巍</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">宋冬野</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张惠妹</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">周传雄</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张信哲</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">杨洋</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">徐良</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">陈小春</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">曲婉婷</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">鹏泊</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">孙燕姿</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Wiz Khalifa (维兹·卡利法)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张宇</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">葛林</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">莫文蔚</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张磊</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Jam</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">牛奶咖啡</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">汪峰</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Charlie Puth (查理·普斯)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">本兮</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">胡夏</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">马旭东</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">威仔</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">李易峰</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">雨宗林</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">郭静</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">李宇春</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张韶涵</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">萌萌哒天团</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Fall Out Boy (打倒男孩)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Rihanna (蕾哈娜)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">The Chainsmokers (烟民二人组)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">夏婉安</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">周二珂</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Tez Cadey</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Eminem (艾米纳姆)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张敬轩</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">齐一</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">韩安旭</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">李圣杰</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">张赫宣</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">방탄소년단 (防弹少年团)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">刘瑞琦</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Adele (阿黛尔)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">双笙</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">逃跑计划</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">BLACKPINK</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">易烊千玺</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">Owl City (猫头鹰之城)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">谭晶</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">陈翔</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">刘德华</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">One Direction (单向组合)</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">蔡健雅</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">范玮琪</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">徐佳莹</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">金南玲</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">李克勤</a></li>
+            <li class="singer_list_txt_item"><a href="" class="singer_list_cover_list_txt_item_link">齐晨</a></li>
+        </ul>
+        <div class="mod_page_nav">
+            <a href="" class="pageindex_action">1</a>
+            <a href="" class="pageindex">2</a>
+            <a href="" class="pageindex">3</a>
+            <a href="" class="pageindex">4</a>
+            <strong class="user_select">...</strong>
+            <a href="" class="pageindex">5526</a>
+            <a href="" class="pageindex">></a>
+        </div>
+    </div>
+    {{include '../shared/footer-nav'}}
+    <script>
+        var img = document.querySelectorAll('.singer_list_item .singer_list_item_box')
+        var fig = 1
+        for (var i = 0; i < 10; i++) {
+            img[i].style.backgroundImage = 'url(/images/singer/' + fig + '.jpg)';
+            fig++;
+        }
+    </script>
+    {{include '../shared/footer'}}

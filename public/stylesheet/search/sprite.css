@@ -1,0 +1,26 @@
+i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 38px;
+    vertical-align: -3px;
+    margin-right: 5px;
+    background-image: url("/images/icon_sprite_1x.png");
+    background-repeat: no-repeat;
+}
+
+.icon_add {
+    background-position: -20px 0px;
+}
+
+.icon_play {
+    background-position: -60px -220px;
+}
+
+.icon_download {
+    background-position: -40px -220px;
+}
+
+.icon_operate {
+    background-position: -120px 0px;
+}

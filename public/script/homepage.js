@@ -159,12 +159,13 @@ var newMVItems = [{
 var firstSlideBar = new SlideBar(4, '.newsong');
 var secondSlideBar = new SlideBar(3, '.hotlist');
 var slideBar3D = new SlideBar3D(3, '.jingcai');
+
 // 创建单个图片项目的方法
 function createItem(obj, str) {
     if (obj.playsum != '' && obj.playsum != null) {
         $(str + ' .slidebar ul').append(`<li>
                     <div class="item">
-                        <a href=""><img
+                        <a href=><img
                                 src= ${obj.src}
                                 alt="">
                             <div class="img_mask"></div>

@@ -16,7 +16,7 @@ app.use(session({
     resave: true,
     saveUninitialized: false,
     cookie: {
-        maxAge: 1000 * 20
+        maxAge: 1000 * 60 * 10
     }
 }));
 
@@ -36,11 +36,15 @@ app.engine('html', template.__express);
 
 // 使用路由
 app.use(require('./routes/index'));
-// app.use(require('./routes/user/signin'));
-// app.use(require('./routes/user/signup'));
-app.use(require('./routes/homepage'));
+app.use(require('./routes/user/signin'));
+app.use(require('./routes/user/signup'));
+app.use(require('./routes/user/logout'));
+app.use(require('./routes/musicHall/homepage'));
+app.use(require('./routes/musicHall/singer'));
+app.use(require('./routes/musicHall/album'));
+app.use(require('./routes/player'))
 
 
-app.listen(80, function(req, res) {
+app.listen(8080, function(req, res) {
     console.log("start server");
 })

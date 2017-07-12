@@ -1,0 +1,481 @@
+{{include '../shared/header'}}
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheet/header_style.css">
+<link rel="stylesheet" href="/stylesheet/hover.css">
+<link rel="stylesheet" href="/stylesheet/footer_style.css">
+<link rel="stylesheet" href="/stylesheet/userView/signUpView.css">
+<link rel="stylesheet" href="/stylesheet/userView/signInView.css">
+<link rel="stylesheet" href="/stylesheet/userView/myShow.css">
+<!--<link rel="stylesheet" href="/stylesheet/singer_style.css">-->
+<link rel="stylesheet" href="/stylesheet/album.css">
+</head>
+
+<body>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    {{include '../shared/header-nav'}}
+    <div class="mod-top-subnav">
+        <ul>
+            <li class="top_subnav_link"><a href="/">首页</a></li>
+            <li class="top_subnav_link"><a href="singer">歌手</a></li>
+            <li class="top_subnav_link top_subnav_link_clicked"><a href="#">专辑</a></li>
+            <li class="top_subnav_link"><a href="javascript:;">排行榜</a></li>
+            <li class="top_subnav_link"><a href="javascript:;">分类歌单</a></li>
+            <li class="top_subnav_link"><a href="javascript:;">MV</a></li>
+        </ul>
+    </div>
+    <!--登录界面-->
+    {{include '../user/signInView'}}
+    <!--注册界面-->
+    {{include '../user/signUpView'}}
+    <div class="main">
+        <div class="mod_tag container">
+            <div class="tag_list">
+                <h3 class="tag_tit" id="yz">语种</h3>
+                <a href="javascript:;" class="tag_item_click">全部</a>
+                <a href="javascript:;" class="tag_item">国语</a>
+                <a href="javascript:;" class="tag_item">粤语</a>
+                <a href="javascript:;" class="tag_item">英语</a>
+                <a href="javascript:;" class="tag_item">韩语</a>
+                <a href="javascript:;" class="tag_item">日语</a>
+                <a href="javascript:;" class="tag_item">法语</a>
+                <a href="javascript:;" class="tag_item">西班牙语</a>
+            </div>
+            <div class="tag_list">
+                <h3 class="tag_tit" id="lp">流派</h3>
+                <a href="javascript:;" class="tag_item_click">全部</a>
+                <a href="javascript:;" class="tag_item">流行</a>
+                <a href="javascript:;" class="tag_item">古典</a>
+                <a href="javascript:;" class="tag_item">爵士</a>
+                <a href="javascript:;" class="tag_item">摇滚</a>
+                <a href="javascript:;" class="tag_item">电子</a>
+                <a href="javascript:;" class="tag_item">拉丁</a>
+                <a href="javascript:;" class="tag_item">轻音乐</a>
+                <a href="javascript:;" class="tag_item">世界音乐</a>
+                <a href="javascript:;" class="tag_item">嘻哈</a>
+                <a href="javascript:;" class="tag_item">原声</a>
+                <a href="javascript:;" class="tag_item">乡村</a>
+                <a href="javascript:;" class="tag_item">舞曲</a>
+                <a href="javascript:;" class="tag_item">R&B</a>
+                <a href="javascript:;" class="tag_item">民谣</a>
+                <a href="javascript:;" class="tag_item">金属</a>
+            </div>
+            <div class="tag_list">
+                <h3 class="tag_tit" id="jg">价格</h3>
+                <a href="javascript:;" class="tag_item_click">全部</a>
+                <a href="javascript:;" class="tag_item">免费</a>
+                <a href="javascript:;" class="tag_item">付费</a>
+            </div>
+            <div class="tag_list">
+                <h3 class="tag_tit">筛选</h3>
+                <a href="javascript:;" class="tag_item_list sub" id="lb">类别</a>
+                <a href="javascript:;" class="tag_item_list sub" id="nd">年代</a>
+                <a href="javascript:;" class="tag_item_list sub" id="gs">唱片公司</a>
+            </div>
+            <div class="popup_list container" style="display:none" id="lblist">
+                <a href="javascript:;" class="tag_item_click">全部</a>
+                <a href="javascript:;" class="tag_item">专辑</a>
+                <a href="javascript:;" class="tag_item">EP</a>
+                <a href="javascript:;" class="tag_item">Single</a>
+                <a href="javascript:;" class="tag_item">演唱会</a>
+                <a href="javascript:;" class="tag_item">动漫</a>
+                <a href="javascript:;" class="tag_item">游戏</a>
+            </div>
+            <div class="popup_list container" style="display:none" id="ndlist">
+                <a href="javascript:;" class="tag_item_click">全部</a>
+                <a href="javascript:;" class="tag_item">2017</a>
+                <a href="javascript:;" class="tag_item">2016</a>
+                <a href="javascript:;" class="tag_item">2015</a>
+                <a href="javascript:;" class="tag_item">2014</a>
+                <a href="javascript:;" class="tag_item">2013</a>
+                <a href="javascript:;" class="tag_item">2012</a>
+                <a href="javascript:;" class="tag_item">一零年代</a>
+                <a href="javascript:;" class="tag_item">零零年代</a>
+                <a href="javascript:;" class="tag_item">九十年代</a>
+                <a href="javascript:;" class="tag_item">八十年代</a>
+                <a href="javascript:;" class="tag_item">七十年代</a>
+                <a href="javascript:;" class="tag_item">六十年代</a>
+            </div>
+            <div class="popup_list container" style="display:none" id="gslist">
+                <a href="javascript:;" class="tag_item_click">全部</a>
+                <a href="javascript:;" class="tag_item">华纳唱片</a>
+                <a href="javascript:;" class="tag_item">索尼音乐</a>
+                <a href="javascript:;" class="tag_item">环球唱片</a>
+                <a href="javascript:;" class="tag_item">麦爱音乐</a>
+                <a href="javascript:;" class="tag_item">杰威尔音乐</a>
+                <a href="javascript:;" class="tag_item">英皇唱片</a>
+                <a href="javascript:;" class="tag_item">三胜文化</a>
+                <a href="javascript:;" class="tag_item">福茂唱片</a>
+                <a href="javascript:;" class="tag_item">金牌大风</a>
+                <a href="javascript:;" class="tag_item">YG</a>
+                <a href="javascript:;" class="tag_item">少城时代</a>
+                <a href="javascript:;" class="tag_item">华谊兄弟</a>
+                <a href="javascript:;" class="tag_item">华纳PLG</a>
+                <a href="javascript:;" class="tag_item">Cube</a>
+                <a href="javascript:;" class="tag_item">Loen</a>
+                <a href="javascript:;" class="tag_item">当然娱乐</a>
+                <a href="javascript:;" class="tag_item">梦响强音</a>
+                <a href="javascript:;" class="tag_item">乐华圆娱</a>
+                <a href="javascript:;" class="tag_item">梦响当然</a>
+                <a href="javascript:;" class="tag_item">林暐哲音乐</a>
+                <a href="javascript:;" class="tag_item">和平之月</a>
+                <a href="javascript:;" class="tag_item">NHN BUGS</a>
+                <a href="javascript:;" class="tag_item">Genie Music</a>
+            </div>
+            <div class="mod_part_detail">
+                <div class="part_detail_hd">
+                    <h2 class="part_detail_tit">全部专辑
+                        <span id="yzl"><a href="javascript:;">x</a></span>
+                        <span id="lpl"><a href="javascript:;">x</a></span>
+                        <span id="jgl"><a href="javascript:;">x</a></span>
+                        <span id="lbl"><a href="javascript:;">x</a></span>
+                        <span id="ndl"><a href="javascript:;">x</a></span>
+                        <span id="gsl"><a href="javascript:;">x</a></span>
+                    </h2>
+                    <div class="part_switch">
+                        <a href="javascript:;" class="part_switch_item_action">最新</a>
+                        <a href="javascript:;" class="part_switch_item">最热</a>
+                    </div>
+                </div>
+                <div class="mod_play">
+                    <ul class="playlist_list">
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">第48区</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">SNH48</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">相伴</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">许鹤缤</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">你一定要是个孩子</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">蔡琴</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">再见18岁</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">隔壁团</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">향기로와 (甜蜜)</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">L.A.U (엘에이유)</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">金曲捞 第12期</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">金曲捞</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">lgar: The Dream of Gerontius...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">Andrew Staples / Staatskapelle</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">难得糊涂</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">药坞乐队</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-07-01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">通关</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">许嵩</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">同一秒快乐</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">TFBOYS</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href=""> Attention (Oliver Heldens R...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">Charlie Puth (查理·普斯)</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">Castle on the Hill (Throttle Re...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">Ed Sheeran (艾德·希兰)</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">上古情歌 电视剧原声带</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">华语群星</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">逆袭之星途璀璨 电视剧原声...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">华语群星</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">阿Sam与阿Tam (Classic Vers...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">谭咏麟 / 许冠杰</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">第48区</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">SNH48</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">还来得及</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">黄子韬</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">Swish Swish (Valentino Khan Re...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">Katy Perry (凯蒂·佩里) / Nicki Mi...</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">Swish Swish (Valentino Khan Re...</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">Katy Perry (凯蒂·佩里) / Nicki Mi...</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+                        <li class="playlist_item">
+                            <div class="playlist_item_box">
+                                <div class="playlist_cover">
+                                    <i></i>
+                                </div>
+                                <h4 class="playlist_title">
+                                    <a href="">Funk Wav Bounces Vol.1</a>
+                                </h4>
+                                <div class="playlist_author">
+                                    <a href="">Calvin Harris (卡尔文·哈里斯)</a>
+                                </div>
+                                <div class="playlist_other">
+                                    2017-06-30
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="mod_page_nav">
+            <a href="" class="pageindex_action">1</a>
+            <a href="" class="pageindex">2</a>
+            <a href="" class="pageindex">3</a>
+            <a href="" class="pageindex">4</a>
+            <strong class="user_select">...</strong>
+            <a href="" class="pageindex">48153</a>
+            <a href="" class="pageindex">></a>
+        </div>
+    </div>
+    {{include '../shared/footer-nav'}}
+    <script src="/script/album.js"></script>
+    {{include '../shared/footer'}}

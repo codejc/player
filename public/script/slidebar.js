@@ -12,11 +12,11 @@ function SlideBar(num, con) {
 
 
 SlideBar.prototype = {
-    clickLeft: function (obj) {
+    clickLeft: function(obj) {
         if (obj.isClickAble) {
             obj.slideBarIndex++;
             obj.swichBarIndex--;
-            swichBarChange(obj,obj.num);
+            swichBarChange(obj, obj.num);
             obj.isClickAble = false
             if (obj.slideBarIndex != 1) {
                 $(obj.container + ' .slidebar ul').css('margin-left', obj.slideBarIndex * 1200 + 'px');
@@ -31,9 +31,9 @@ SlideBar.prototype = {
                 $(obj.container + ' .slidebar ul').addClass('delete').removeClass('onshow');
                 newUl.removeClass('delete')
                 newUl.css('margin-left', -obj.num * 1200 + 'px');
-                setTimeout(function () {
+                setTimeout(function() {
                     $(obj.container + ' .slidebar ul').css('margin-left', -(obj.num - 1) * 1200 + 'px');
-                    setTimeout(function () {
+                    setTimeout(function() {
                         $(obj.container + ' .delete').remove();
                         obj.slideBarIndex = -(obj.num - 1);
                     }, 400)
@@ -42,16 +42,16 @@ SlideBar.prototype = {
             /*
              * 阻止鼠标连点
              * */
-            setTimeout(function () {
+            setTimeout(function() {
                 obj.isClickAble = true;
             }, 500);
         }
     },
-    clickRight: function (obj) {
+    clickRight: function(obj) {
         if (obj.isClickAble) {
             obj.slideBarIndex--;
             obj.swichBarIndex++;
-            swichBarChange(obj,obj.num);
+            swichBarChange(obj, obj.num);
             obj.isClickAble = false
             $(obj.container + ' .slidebar ul').css('margin-left', obj.slideBarIndex * 1200 + 'px');
             /*
@@ -64,7 +64,7 @@ SlideBar.prototype = {
                 $(obj.container + ' .slidebar ul').addClass('delete').removeClass('onshow');
                 newUl.removeClass('delete')
                 newUl.css('margin-left', '0px');
-                setTimeout(function () {
+                setTimeout(function() {
                     $('.delete').remove();
                     obj.slideBarIndex = 0;
                 }, 500)
@@ -72,7 +72,7 @@ SlideBar.prototype = {
             /*
              * 阻止鼠标连点
              * */
-            setTimeout(function () {
+            setTimeout(function() {
                 obj.isClickAble = true;
             }, 500)
         }
@@ -83,7 +83,7 @@ function swichBarChange(obj, sum) {
     console.log(sum)
     let swiches = $(obj.container + ' .switchbar a');
     if (obj.swichBarIndex < 0) {
-        obj.swichBarIndex = sum-1;
+        obj.swichBarIndex = sum - 1;
     }
     if (obj.swichBarIndex > sum - 1) {
         obj.swichBarIndex = 0

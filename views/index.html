@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/stylesheet/footer_style.css">
 <link rel="stylesheet" href="/stylesheet/userView/signUpView.css">
 <link rel="stylesheet" href="/stylesheet/userView/signInView.css">
+<link rel="stylesheet" href="/stylesheet/userView/myShow.css">
 </head>
 
 <body>
@@ -12,34 +13,23 @@
     {{include 'shared/header-nav'}}
     <div class="mod-top-subnav">
         <ul>
-            <li class="top_subnav_link top_subnav_link_clicked"><a href="">首页</a></li>
-            <li class="top_subnav_link"><a href="">歌手</a></li>
-            <li class="top_subnav_link"><a href="">专辑</a></li>
-            <li class="top_subnav_link"><a href="">排行榜</a></li>
-            <li class="top_subnav_link"><a href="">分类歌单</a></li>
-            <li class="top_subnav_link"><a href="">MV</a></li>
+            <li class="top_subnav_link top_subnav_link_clicked"><a href="/">首页</a></li>
+            <li class="top_subnav_link"><a href="musicHall/singer">歌手</a></li>
+            <li class="top_subnav_link"><a href="musicHall/album">专辑</a></li>
+            <li class="top_subnav_link"><a href="javascript:;">排行榜</a></li>
+            <li class="top_subnav_link"><a href="javascript:;">分类歌单</a></li>
+            <li class="top_subnav_link"><a href="javascript:;">MV</a></li>
         </ul>
     </div>
     <!--登录界面-->
     {{include 'user/signInView'}}
     <!--注册界面-->
     {{include 'user/signUpView'}}
+    <!--首页-->
     <div style="height:3768px;width:100% ">
-        <iframe src="/homepage" frameborder="0 " style="width:100%;height:3768px "></iframe>
+        <iframe src="/musicHall/homepage" frameborder="0 " style="width:100%;height:3768px "></iframe>
     </div>
     <!--底部导航-->
     {{include 'shared/footer-nav'}}
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/script/userView/signInView.js "></script>
-    <script src="/script/userView/signUpView.js "></script>
-    <script src="/script/user/signup.js"></script>
-    <script src="/script/user/signin.js"></script>
-    <script>
-        var as = $('a');
-        for (let i = 0; i < as.length; i++) {
-            as.eq(i).attr('href', '#');
-        }
-    </script>
-</body>
-
-</html>
+    <!---->
+    {{include 'shared/footer'}}

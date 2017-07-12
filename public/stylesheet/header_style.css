@@ -145,7 +145,7 @@
     color: #31c27c!important;
 }
 
-.mod-top-search input{
+.mod-top-search input {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: none;
@@ -154,14 +154,15 @@
     padding: 0 15px;
     margin-top: 27px;
 }
-#search{
+
+#search {
     display: block;
     position: relative;
     height: 24px;
     width: 24px;
-    background-image: url("../images/search.png");
+    background-image: url("/images/search.png");
     background-repeat: no-repeat;
     background-size: 20px;
-    top:-30px;
-    left:170px;
+    top: -30px;
+    left: 170px;
 }
