@@ -41,6 +41,6 @@ app.use(require('./routes/index'));
 app.use(require('./routes/homepage'));
 
 
-app.listen(8888, function(req, res) {
+app.listen(80, function(req, res) {
     console.log("start server");
 })
