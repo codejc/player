@@ -36,8 +36,8 @@ app.engine('html', template.__express);
 
 // 使用路由
 app.use(require('./routes/index'));
-app.use(require('./routes/user/signin'));
-app.use(require('./routes/user/signup'));
+// app.use(require('./routes/user/signin'));
+// app.use(require('./routes/user/signup'));
 app.use(require('./routes/homepage'));
 
 
