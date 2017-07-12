@@ -1,0 +1,122 @@
+#mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 10000;
+    display: none;
+}
+
+#signInView {
+    width: 530px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10001;
+    display: none;
+}
+
+#signInView h2 {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+#signInView .box {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signInView .left {
+    width: 40%;
+    float: left;
+}
+
+#signInView .right {
+    width: 40%;
+    float: right;
+    border-left: 1px solid rgb(32, 172, 87);
+}
+
+#signInView .left .bg {
+    height: 45px;
+    background-image: url('../../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#signInView .left h1 {
+    font-size: 40px;
+    margin: 25px 0 0 0;
+}
+
+#signInView .left span {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#signInView .left .text {
+    margin-left: 20px;
+}
+
+#signInView h2 a {
+    width: 20px;
+    height: 20px;
+    float: right;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 10px;
+}
+
+#signInView h2 a span {
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    line-height: 16px;
+    position: absolute;
+    left: 5px;
+}
+
+#signInView form .form-group {
+    padding-left: 30px;
+    margin: 13px;
+}
+
+#signInView form .form-group label {
+    font-size: 13px;
+}
+
+#signInView form .form-group input {
+    width: 150px;
+    height: 25px;
+    display: inline-block;
+    border: none;
+    border: 1px solid lightgrey;
+    font-size: 13px;
+}
+
+#signInView form input.button {
+    background-color: rgb(32, 172, 87);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#signInView form .form-span {
+    padding-left: 30px;
+    text-align: center;
+}
+
+#signInView form span {
+    font-size: 13px;
+    color: orange;
+}

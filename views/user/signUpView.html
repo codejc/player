@@ -1,0 +1,27 @@
+<div id="signUpView">
+    <h2>
+        <a href="javascript:;"><span>x</span></a>
+    </h2>
+    <div class="box">
+        <div class="bg"></div>
+        <div>
+            <form action="/user/signup" method="post">
+                <div class=" form-group">
+                    <input type="text" class="input" id="username" placeholder="请填写昵称" pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,16}$" name="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input" id="password" placeholder="请填写密码" pattern="^.{6,16}$" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input" placeholder="请再次填写密码" pattern="^.{6,16}$" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="注册 " class="button">
+                </div>
+                <div class="form-span">
+                    <span></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

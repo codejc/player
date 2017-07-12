@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Capt.W">
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .showBox {
+            width: 270px;
+            height: 320px;
+            border: 1px solid lightgrey;
+        }
+        
+        .showInfo {
+            width: 100%;
+            height: 190px;
+            border-bottom: 1px solid lightgray;
+            padding: 15px;
+        }
+        
+        .mine {
+            height: 50%;
+        }
+        
+        .myImg {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        
+        .info {
+            height: 45%;
+        }
+        
+        ul {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        ul li {
+            width: 33%;
+            list-style: none;
+            text-align: center;
+        }
+        
+        ul li:nth-child(2) {
+            border-left: 1px solid lightgrey;
+            border-right: 1px solid lightgrey;
+        }
+        
+        ul li p {
+            margin: 0;
+            font-size: 25px;
+        }
+        
+        ul li span {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="showBox">
+        <div class="showInfo">
+            <div class="mine">
+                <a href="" class="myImg"></a>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <p>0</p>
+                        <span>歌单</span>
+                    </li>
+                    <li>
+                        <p>0</p>
+                        <span>关注</span>
+                    </li>
+                    <li>
+                        <p>0</p>
+                        <span>粉丝</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</body>
+
+</html>

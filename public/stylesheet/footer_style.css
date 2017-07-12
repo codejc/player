@@ -1,0 +1,284 @@
+    footer{
+        background-color: #333;
+        color: #999;
+        min-width: 1200px;
+        
+    }
+/*--------------------------------------footer_info-------------------------------------------------*/
+    .footer_info{
+        height: 300px;
+    }
+    .footer_download{
+        position: absolute;
+        left: 10px;
+        top: 0px
+    }
+    .footer_product{
+        position: absolute;
+        top:0px;
+        left: 480px;
+        width: 300px;
+    }
+    .footer_link{
+        position: absolute;
+        width: 300px;
+        right: 0;
+        float: right;
+        top:0px;
+    }
+    .footer_platform{
+        margin: 230px 0 0 -5px
+    }
+
+
+
+    .footer_tit{
+        font-size: 15px;
+        font-weight: 400px;
+        padding: 80px 0px 40px;
+    }
+    .footer_download>ul>li>a:hover>i{
+        color: #31c27c!important;
+    }
+    .footer_product>ul>li>a:hover>i{
+        color: #31c27c!important;
+    }
+    .footer_link>ul>li>a>i:hover{
+        color: #31c27c!important;
+    }
+    .footer_platform>ul>li>a>i:hover{
+        color: #31c27c!important;
+    }
+    /*--------------------------------.footer_download---------------------------------------*/
+    .footer_download_itemlist{
+        padding: 0;
+        list-style: none;
+    }
+    .footer_download>.footer_download_itemlist>li{
+        padding: 0  29px 0 0;
+        float: left;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(1)>a{
+        position: relative;
+        display: block; 
+        height: 48px;
+        width: 37px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: 0 0;
+
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(2)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 46px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -200% 0;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(3)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 50px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -400% 0;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(4)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 50px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -601% 0;
+    }
+    /*.footer_download>.footer_download_itemlist>li>a>i:hover{
+        color: #31c27c!important;
+    }*/
+    .footer_download>.footer_download_itemlist>li:nth-child(1)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: 0 -96%;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(2)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -200% -96%;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(3)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -400% -96%;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(4)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -601% -96%;
+    }
+    .footer_download>.footer_download_itemlist>li>a>i{
+        position: absolute;
+        bottom: -40px;
+        left: 0px;       
+        display: block;
+        color:#999;
+        font-style: normal;
+        width: 70px;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(3)>a>i{
+        left: -6px;
+    }
+    .footer_download>.footer_download_itemlist>li:nth-child(4)>a>i{
+        left: -5px;
+    }
+
+/*---------------------------------.footer_product----------------------------------------*/
+    .footer_product_itemlist{
+        padding: 0;
+        list-style: none;
+    }
+    .footer_product>.footer_product_itemlist>li{
+        padding: 0  29px 0 0;
+        float: left;
+    }
+
+    .footer_product>.footer_product_itemlist>li:nth-child(1)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 50px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -801% 0;
+        z-index: 2;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(2)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        left: 20px;
+        width: 50px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -1001% 0;
+        z-index: 2;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(2){
+        width: 100px;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(3)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 50px;
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -1201% 0;
+        
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(4)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 50px;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(5)>a{
+        position: relative;
+        display: block;
+        height: 48px;
+        width: 50px;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(1)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -801% -96%;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(2)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -1001% -96%;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(3)>a:hover{
+        background-image: url(../images/footer.png);
+        background-size: 1300% 200%;
+        background-position: -1201% -96%;
+    }
+    .footer_product>.footer_product_itemlist>li>a>i{
+        position: absolute;
+        bottom: -40px;
+        left: 0px;       
+        display: block;
+        color:#999;
+        font-style: normal;
+        width: 70px;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(2)>a>i{
+        width: 100px;
+        left: -18px;
+    }
+    .footer_product>.footer_product_itemlist>li:nth-child(3)>a>i{
+        left: 10px;
+    }
+    /*---------------------------.footer_link---------------------------*/
+    .footer_link_itemlist{
+        padding: 0;
+        list-style: none;
+    }
+    .footer_link>.footer_link_itemlist>li{
+        padding: 0  29px 0 0;
+        float: left;
+    }
+    .footer_link>.footer_link_itemlist>li>a{
+        position: relative;
+        display: block;
+        height: 30px;
+        width: 70px;
+        text-decoration: none;
+    }
+    .footer_link>.footer_link_itemlist>li>a>i{
+        display: block;
+        color: #999;
+        font-style: normal;
+        width: 100px;
+    }
+    /*----------------------------------.footer_platform----------------------------*/
+    .footer_platform_itemlist{
+        padding: 0;
+        list-style: none;
+    }
+    .footer_platform>.footer_platform_itemlist>li{
+        padding: 0  29px 0 0;
+        float: left;
+    }
+    .footer_platform>.footer_platform_itemlist>li>a{
+        position: relative;
+        display: block;
+        height: 30px;
+        width: 90px;
+        text-decoration: none;
+    }
+    .footer_platform>.footer_platform_itemlist>li>a>i{
+        display: block;
+        color: #999;
+        font-style: normal;
+        width: 100px;
+        
+    }
+/*---------------------------------------声明---------------------------------------------*/
+    .footer_copyright>p>a:hover{
+        color: #31c27c!important;
+    }
+    .footer_copyright>p{
+    text-align: center;
+        font-size: 12px;
+        
+    }
+    .footer_copyright>p>a{
+        text-decoration: none;
+        color: #999;
+        display: inline-block;
+        padding: 0 5px;
+        
+    }

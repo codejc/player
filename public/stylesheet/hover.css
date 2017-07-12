@@ -1,0 +1,18 @@
+
+.top_nav_link>a:hover{
+    color:#31c27c!important 
+}
+.top_subnav_link>a:hover{
+    color: #31c27c!important ;
+}
+.top_login_link_vip:hover{
+    background-color: #43af7b;
+    color:#fff !important;
+}
+.top_login_link_open:hover{
+    background-color: #dbd9d7;
+    color:#333 !important;
+}
+.top_login_link:hover{
+    color:#31c27c;
+} 
